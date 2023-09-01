@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>17437_HW3</title>
+        <link rel="stylesheet" href="/static/wordish/wordish.css">
+    </head>
+
+    <body>
+
+        <div id="status" class="center" style="text-align:center">
+            {{ status }}
+        </div>
+
+        <table class="center">
+            <tr>
+                {% if color00 %}
+                <td><div class="cell" id="cell_0_0" style="background-color: {{ color00 }}">{{guess00}}</div></td>
+                <td><div class="cell" id="cell_0_1" style="background-color: {{ color01 }}">{{guess01}}</div></td>
+                <td><div class="cell" id="cell_0_2" style="background-color: {{ color02 }}">{{guess02}}</div></td>
+                <td><div class="cell" id="cell_0_3" style="background-color: {{ color03 }}">{{guess03}}</div></td>
+                <td><div class="cell" id="cell_0_4" style="background-color: {{ color04 }}">{{guess04}}</div></td>
+                {% else %}
+                <td><div class="cell" id="cell_0_0"> </div></td>
+                <td><div class="cell" id="cell_0_1"> </div></td>
+                <td><div class="cell" id="cell_0_2"> </div></td>
+                <td><div class="cell" id="cell_0_3"> </div></td>
+                <td><div class="cell" id="cell_0_4"> </div></td>
+                {% endif %}
+            </tr>
+
+            <tr>
+                {% if color10 %}
+                <td><div class="cell" id="cell_1_0" style="background-color: {{ color10 }}">{{guess10}}</div></td>
+                <td><div class="cell" id="cell_1_1" style="background-color: {{ color11 }}">{{guess11}}</div></td>
+                <td><div class="cell" id="cell_1_2" style="background-color: {{ color12 }}">{{guess12}}</div></td>
+                <td><div class="cell" id="cell_1_3" style="background-color: {{ color13 }}">{{guess13}}</div></td>
+                <td><div class="cell" id="cell_1_4" style="background-color: {{ color14 }}">{{guess14}}</div></td>
+                {% else %}
+                <td><div class="cell" id="cell_1_0"> </div></td>
+                <td><div class="cell" id="cell_1_1"> </div></td>
+                <td><div class="cell" id="cell_1_2"> </div></td>
+                <td><div class="cell" id="cell_1_3"> </div></td>
+                <td><div class="cell" id="cell_1_4"> </div></td>
+                {% endif %}
+            </tr>
+
+            <tr>
+                {% if color20 %}
+                <td><div class="cell" id="cell_2_0" style="background-color: {{ color20 }}">{{guess20}}</div></td>
+                <td><div class="cell" id="cell_2_1" style="background-color: {{ color21 }}">{{guess21}}</div></td>
+                <td><div class="cell" id="cell_2_2" style="background-color: {{ color22 }}">{{guess22}}</div></td>
+                <td><div class="cell" id="cell_2_3" style="background-color: {{ color23 }}">{{guess23}}</div></td>
+                <td><div class="cell" id="cell_2_4" style="background-color: {{ color24 }}">{{guess24}}</div></td>
+                {% else %}
+                <td><div class="cell" id="cell_2_0"> </div></td>
+                <td><div class="cell" id="cell_2_1"> </div></td>
+                <td><div class="cell" id="cell_2_2"> </div></td>
+                <td><div class="cell" id="cell_2_3"> </div></td>
+                <td><div class="cell" id="cell_2_4"> </div></td>
+                {% endif %}
+            </tr>
+
+            <tr>
+                {% if color30 %}
+                <td><div class="cell" id="cell_3_0" style="background-color: {{ color30 }}">{{guess30}}</div></td>
+                <td><div class="cell" id="cell_3_1" style="background-color: {{ color31 }}">{{guess31}}</div></td>
+                <td><div class="cell" id="cell_3_2" style="background-color: {{ color32 }}">{{guess32}}</div></td>
+                <td><div class="cell" id="cell_3_3" style="background-color: {{ color33 }}">{{guess33}}</div></td>
+                <td><div class="cell" id="cell_3_4" style="background-color: {{ color34 }}">{{guess34}}</div></td>
+                {% else %}
+                <td><div class="cell" id="cell_3_0"> </div></td>
+                <td><div class="cell" id="cell_3_1"> </div></td>
+                <td><div class="cell" id="cell_3_2"> </div></td>
+                <td><div class="cell" id="cell_3_3"> </div></td>
+                <td><div class="cell" id="cell_3_4"> </div></td>
+                {% endif %}
+            </tr>
+
+            <tr>
+                {% if color40 %}
+                <td><div class="cell" id="cell_4_0" style="background-color: {{ color40 }}">{{guess40}}</div></td>
+                <td><div class="cell" id="cell_4_1" style="background-color: {{ color41 }}">{{guess41}}</div></td>
+                <td><div class="cell" id="cell_4_2" style="background-color: {{ color42 }}">{{guess42}}</div></td>
+                <td><div class="cell" id="cell_4_3" style="background-color: {{ color43 }}">{{guess43}}</div></td>
+                <td><div class="cell" id="cell_4_4" style="background-color: {{ color44 }}">{{guess44}}</div></td>
+                {% else %}
+                <td><div class="cell" id="cell_4_0"> </div></td>
+                <td><div class="cell" id="cell_4_1"> </div></td>
+                <td><div class="cell" id="cell_4_2"> </div></td>
+                <td><div class="cell" id="cell_4_3"> </div></td>
+                <td><div class="cell" id="cell_4_4"> </div></td>
+                {% endif %}
+            </tr>
+
+            <tr>
+                {% if color50 %}
+                <td><div class="cell" id="cell_5_0" style="background-color: {{ color50 }}">{{guess50}}</div></td>
+                <td><div class="cell" id="cell_5_1" style="background-color: {{ color51 }}">{{guess51}}</div></td>
+                <td><div class="cell" id="cell_5_2" style="background-color: {{ color52 }}">{{guess52}}</div></td>
+                <td><div class="cell" id="cell_5_3" style="background-color: {{ color53 }}">{{guess53}}</div></td>
+                <td><div class="cell" id="cell_5_4" style="background-color: {{ color54 }}">{{guess54}}</div></td>
+                {% else %}
+                <td><div class="cell" id="cell_5_0"> </div></td>
+                <td><div class="cell" id="cell_5_1"> </div></td>
+                <td><div class="cell" id="cell_5_2"> </div></td>
+                <td><div class="cell" id="cell_5_3"> </div></td>
+                <td><div class="cell" id="cell_5_4"> </div></td>
+                {% endif %}
+            </tr>
+        </table>
+
+        <form class="center" action="processGame" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="targetText" value="{{ targetText }}">
+            
+            {% if guessedNum %}
+            <input type="hidden" name="guessedNum" value="{{ guessedNum }}">
+            {% else %}
+            {% endif %}
+
+            {% if status %}
+            <input type="hidden" name="status" value="{{ status }}">
+            {% else %}
+            {% endif %}
+
+            {% if finished %}
+            <input type="hidden" name="finished" value="{{ finished }}">
+            {% else %}
+            {% endif %}
+
+            {% if color00 %}
+            <input type="hidden" name="color00" value="{{ color00 }}">
+            <input type="hidden" name="color01" value="{{ color01 }}">
+            <input type="hidden" name="color02" value="{{ color02 }}">
+            <input type="hidden" name="color03" value="{{ color03 }}">
+            <input type="hidden" name="color04" value="{{ color04 }}">
+            
+            <input type="hidden" name="guess00" value="{{ guess00 }}">
+            <input type="hidden" name="guess01" value="{{ guess01 }}">
+            <input type="hidden" name="guess02" value="{{ guess02 }}">
+            <input type="hidden" name="guess03" value="{{ guess03 }}">
+            <input type="hidden" name="guess04" value="{{ guess04 }}">
+            {% else %}
+            {% endif %}
+
+            {% if color10 %}
+            <input type="hidden" name="color10" value="{{ color10 }}">
+            <input type="hidden" name="color11" value="{{ color11 }}">
+            <input type="hidden" name="color12" value="{{ color12 }}">
+            <input type="hidden" name="color13" value="{{ color13 }}">
+            <input type="hidden" name="color14" value="{{ color14 }}">
+            
+            <input type="hidden" name="guess10" value="{{ guess10 }}">
+            <input type="hidden" name="guess11" value="{{ guess11 }}">
+            <input type="hidden" name="guess12" value="{{ guess12 }}">
+            <input type="hidden" name="guess13" value="{{ guess13 }}">
+            <input type="hidden" name="guess14" value="{{ guess14 }}">
+            {% else %}
+            {% endif %}
+
+            {% if color20 %}
+            <input type="hidden" name="color20" value="{{ color20 }}">
+            <input type="hidden" name="color21" value="{{ color21 }}">
+            <input type="hidden" name="color22" value="{{ color22 }}">
+            <input type="hidden" name="color23" value="{{ color23 }}">
+            <input type="hidden" name="color24" value="{{ color24 }}">
+            
+            <input type="hidden" name="guess20" value="{{ guess20 }}">
+            <input type="hidden" name="guess21" value="{{ guess21 }}">
+            <input type="hidden" name="guess22" value="{{ guess22 }}">
+            <input type="hidden" name="guess23" value="{{ guess23 }}">
+            <input type="hidden" name="guess24" value="{{ guess24 }}">
+            {% else %}
+            {% endif %}
+
+            {% if color30 %}
+            <input type="hidden" name="color30" value="{{ color30 }}">
+            <input type="hidden" name="color31" value="{{ color31 }}">
+            <input type="hidden" name="color32" value="{{ color32 }}">
+            <input type="hidden" name="color33" value="{{ color33 }}">
+            <input type="hidden" name="color34" value="{{ color34 }}">
+            
+            <input type="hidden" name="guess30" value="{{ guess30 }}">
+            <input type="hidden" name="guess31" value="{{ guess31 }}">
+            <input type="hidden" name="guess32" value="{{ guess32 }}">
+            <input type="hidden" name="guess33" value="{{ guess33 }}">
+            <input type="hidden" name="guess34" value="{{ guess34 }}">
+            {% else %}
+            {% endif %}
+
+            {% if color40 %}
+            <input type="hidden" name="color40" value="{{ color40 }}">
+            <input type="hidden" name="color41" value="{{ color41 }}">
+            <input type="hidden" name="color42" value="{{ color42 }}">
+            <input type="hidden" name="color43" value="{{ color43 }}">
+            <input type="hidden" name="color44" value="{{ color44 }}">
+            
+            <input type="hidden" name="guess40" value="{{ guess40 }}">
+            <input type="hidden" name="guess41" value="{{ guess41 }}">
+            <input type="hidden" name="guess42" value="{{ guess42 }}">
+            <input type="hidden" name="guess43" value="{{ guess43 }}">
+            <input type="hidden" name="guess44" value="{{ guess44 }}">
+            {% else %}
+            {% endif %}
+
+            {% if color50 %}
+            <input type="hidden" name="color50" value="{{ color50 }}">
+            <input type="hidden" name="color51" value="{{ color51 }}">
+            <input type="hidden" name="color52" value="{{ color52 }}">
+            <input type="hidden" name="color53" value="{{ color53 }}">
+            <input type="hidden" name="color54" value="{{ color54 }}">
+            
+            <input type="hidden" name="guess50" value="{{ guess50 }}">
+            <input type="hidden" name="guess51" value="{{ guess51 }}">
+            <input type="hidden" name="guess52" value="{{ guess52 }}">
+            <input type="hidden" name="guess53" value="{{ guess53 }}">
+            <input type="hidden" name="guess54" value="{{ guess54 }}">
+            {% else %}
+            {% endif %}
+
+            <label for="guess_text">Guess:</label>
+            <input id="guess_text" type="text" name="guessText"></input>
+            <button id="guess_button" type="submit">Submit</button>
+        </form>
+    
+    </body>
