@@ -1,5 +1,5 @@
-# wordish
-Wordish game implemented with Python and HTML, powered by Django
+# Wordish Game
+A wordish game implemented with Python and HTML, powered by Django
 
 To run the game, clone the repository and run the following commands:
 
